@@ -3,7 +3,9 @@
 ---
 Hi! I'm Chia-Jung, and you can simply call me Charon.
 
-#Weekly Reports
-[week 1](
+
+## Weekly Reports
+
+[week_1-2023_08_28](https://github.com/Berkeley-MDes/tdf-fa23-chiajungkuo/blob/main/weekly-reports/2023_08_28-report-1.md)
 
 
