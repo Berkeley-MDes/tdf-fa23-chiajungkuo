@@ -6,6 +6,6 @@ Hi! I'm Chia-Jung, and you can simply call me Charon.
 
 ## Weekly Reports
 
-[Report 1 - Week of 2023_08_21](https://github.com/Berkeley-MDes/tdf-fa23-chiajungkuo/blob/main/weekly-reports/2023_08_28-report-1.md)
+[Report 1 - Week of 2023_08_21](https://github.com/Berkeley-MDes/tdf-fa23-chiajungkuo/blob/main/weekly-reports/2023_08_28-report.md)
 
 
