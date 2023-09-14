@@ -1,0 +1,56 @@
+---
+# Report 3 - 2023_09_11 - 2023_09_15 #
+### *Chia-Jung, Kuo, Technology Design Foundation*
+
+### Summary:
+This week I designed three coffee dripper and printed one of them for the project 1. Playing with Grasshopper a lot, I've gotten started with it!
+<img width="400" alt="Fitting iPhone 13" src="https://github.com/Berkeley-MDes/tdf-fa23-chiajungkuo/blob/main/weekly-reports/report2/2023_09_04_summary.jpg">
+
+---
+### Ideation & Sketch:
+Last week, I only modified some paremeters and subtracted something from the original file, but didn't do much creation. Thus, for this week, I'd like to design it from zero to one.
+The artifact I chose to redesign with computational design are coffee drippers. Since I moved to the US, I was annoyed that I don’t have my own coffee dripper. Additionally, brewing coffee has long been an art and mystery, every slight details matters in making coffee. I’m so curious about what might different patterns on the dripper change the flavor of coffee, since there’s no clear and specific guideline or data for people to connect those patterns with flavors, but all depending on abstract description. 
+
+**How might we quantify these physical variables so that we can brew for a more ideal coffee flavor?**
+
+---
+
+
+### Grasshopper:
+Begin with revision, I adjusted the original model to fit my iPhone 13.
+<img width="400" alt="Fitting iPhone 13" src="https://github.com/Berkeley-MDes/tdf-fa23-chiajungkuo/blob/main/weekly-reports/report2/2023_09_04_GH_fitiphone13.jpg">
+
+Then I dealt with the top of the model, which is too flat for an iceberg. As a result, I adjusted the "cane truncate" of the original model, and instead of putting it into *Solid Intersection*, I made it the object to be subtracted. First I inserted the *Rotated geometry* function, used the YZ plane penetrating the centroid of the cylinder, and put on a slider for angle adjustment (note: we can always use the function in *Trig* to convert amounts between radius and angle!)
+
+<img width="800" alt="Tilting the cylinder" src="https://github.com/Berkeley-MDes/tdf-fa23-chiajungkuo/blob/main/weekly-reports/report2/2023_09_04_GH_tilt_top.png">
+
+With similar methods, I extruded the surface, rotated and moved it to a proper overlapping, and then subtracted it from the cone of the previous step to create the section of an iceberg.
+
+<img width="800" alt="Creating section" src="https://github.com/Berkeley-MDes/tdf-fa23-chiajungkuo/blob/main/weekly-reports/report2/2023_09_04_GH_subtract.png">
+
+Now I got an phone stand of the iceberg form after times of the subtraction step.
+
+<img width="400" alt="The iceberg phone stand" src="https://github.com/Berkeley-MDes/tdf-fa23-chiajungkuo/blob/main/weekly-reports/report2/2023_09_04_iceberg.jpg">
+
+What's more, it can further generate a series of different icebergs by simply playing with the parameters!
+
+<img width="400" alt="Series of the iceberg phone stand" src="https://github.com/Berkeley-MDes/tdf-fa23-chiajungkuo/blob/main/weekly-reports/report2/2023_09_04_iceberg_series.jpg">
+
+---
+
+### 3D printing:
+For the ideal effect of an iceberg, I used the *clear resin* of the Form3 printer. 
+<img width="800" alt="Working progress of 3D printing" src="https://github.com/Berkeley-MDes/tdf-fa23-chiajungkuo/blob/main/weekly-reports/report2/2023_09_04_3Dprinting.jpg">
+
+
+The stand with my phone :arrow_down:
+<img width="800" alt="Phone stand with my phone" src="https://github.com/Berkeley-MDes/tdf-fa23-chiajungkuo/blob/main/weekly-reports/report2/2023_09_04_icebergphoto_01.png">
+
+When put under the sunlight, the clear resin would refract various colors.
+<img width="800" alt="Iceberg phone stand!" src="https://github.com/Berkeley-MDes/tdf-fa23-chiajungkuo/blob/main/weekly-reports/report2/2023_09_04_icebergphoto_02.png">
+
+---
+### Reflection:
+Although I've adjusted the phone stand with Grasshopper, it was still not the ideal answer of **computational design** in my mind; they were too random, organic, and "irrational", and I believe the reason is that I was still modifying the appearance, not the design itself -- in other words, my thinking still around **singular objects**. I wanted to redesign the structure from the beginning. However, I found it hard to modify it based on the original model because every node is involved with each other. Next time when **designing the whole system**, I feel that I should begin with plain canva and search for the other user pain points and scenarios for the next project. 
+
+
